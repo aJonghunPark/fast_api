@@ -77,3 +77,17 @@ uvicorn main:app --reload
 ```
 
 上記のFastAPIの公式サイトで詳細を確認してください。
+
+## ライブラリーをインストールする。
+
+pip freezeで生成したrequirements.txtを用いてライブラリーをインストールします。
+
+```sh
+pip install -r requirements.txt
+```
+
+ライブラリーを追加したり、アップデートした際にはrequirements.txtファイルを更新してください。
+
+```sh
+pip freeze > requirements.txt
+```
